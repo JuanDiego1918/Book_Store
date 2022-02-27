@@ -15,7 +15,7 @@
         android:layout_weight="1"
         android:src="@drawable/libro_icon"/>
 
-    
+
     <ScrollView
         android:paddingVertical="@dimen/margin_10"
         android:paddingHorizontal="@dimen/margin_5"
