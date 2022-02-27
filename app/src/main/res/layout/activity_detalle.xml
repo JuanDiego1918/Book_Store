@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    tools:context=".DetalleActivity">
+
+    <ImageView
+        android:id="@+id/imgLibro"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/libro_icon"/>
+
+    
+    <ScrollView
+        android:paddingVertical="@dimen/margin_10"
+        android:paddingHorizontal="@dimen/margin_5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RatingBar
+                android:id="@+id/estrellas"
+                android:layout_gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rating="5"
+                android:isIndicator="true"
+                android:numStars="5"/>
+
+            <TextView
+                android:id="@+id/txtNombre"
+                android:layout_marginVertical="@dimen/margin_text_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_title"
+                android:textColor="@color/secondaryLightColor"
+                android:text="NOMBRE"/>
+
+            <TextView
+                android:layout_marginVertical="@dimen/margin_text_details"
+                android:id="@+id/txtDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/primaryTextColor"
+                android:text="DESC"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnPdf"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/margin_10"
+        android:layout_weight="0.2"
+        android:background="@drawable/btn_details"
+        android:textColor="@color/white"
+        android:text="@string/ver_pdf"/>
+
+</LinearLayout>

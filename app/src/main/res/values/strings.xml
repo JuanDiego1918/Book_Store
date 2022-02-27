@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Book Strore</string>
+    <string name="detalle">Detalle</string>
+    <string name="error_api">Ha ocurrido un error al cargar información</string>
+    <string name="nombre">Nombre</string>
+    <string name="ver_pdf">Ver pdf</string>
+</resources>
